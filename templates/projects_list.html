@@ -1,0 +1,4 @@
+{% for project in projects %}
+    <b><a href="/projects/{{project.fname}}">{{project.title}}</a></b>
+    <p>{{project.tagline}}</p>
+{% endfor %}

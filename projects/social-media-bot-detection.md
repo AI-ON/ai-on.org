@@ -13,7 +13,7 @@ Develop a model capable of reliably flagging politically-motivated botnets on so
 
 ## Why this problem matters
 
-A major, near-term threat posed by artificial intelligence is the deployment of effective disinformation and opinion manipulation campaigns on social media. They may come from nation-states (whether targeted at foreign powers or at their own citizens) and may be extremely well-funded, well-staffed, and technologically advanced. There is already considerable evidence that Russia is using low-tech versions of such tactics to attempt to manipulate the American public. AI will soon allow to scale and refine these techniques into a powerful weapon. The only realistic counter-measure would be the ability to reliably detect and flag non-human activity and opinion manipulation attempts on social media.
+A major, near-term threat posed by artificial intelligence is the deployment of effective disinformation and opinion manipulation campaigns on social media. They may come from nation-states (whether targeted at foreign powers or at their own citizens) and may be extremely well-funded, well-staffed, and technologically advanced. AI will soon allow to scale and refine these techniques into a powerful weapon. The only realistic counter-measure would be the ability to reliably detect and flag non-human activity and opinion manipulation attempts on social media.
 
 
 ## Datasets

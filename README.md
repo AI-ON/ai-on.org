@@ -8,4 +8,4 @@ AI•ON is an open community dedicated to advancing Artificial Intelligence by:
 - Connecting researchers and encouraging open scientific collaboration.
 - Providing a learning environment for students looking to gain machine learning experience.
 
-Learn more at [ai-on.org](http://ai-on.org).
+Learn more at [ai-on.org](http://ai-on.org) and get in touch through [gitter](https://gitter.im/ai-open-network/Lobby).

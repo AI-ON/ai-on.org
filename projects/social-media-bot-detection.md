@@ -4,6 +4,7 @@ Date: October 2016
 Category: Applied Research
 Mailing list: https://groups.google.com/d/forum/aion-social-media-bot-detection
 Contact: ??
+Repository: https://github.com/shawnwanderson/social-media-bot-detection
 
 
 ## Problem description

@@ -17,7 +17,7 @@ jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(TEMPLATES_DIR))
 def parse_project_file(fpath):
     f = open(fpath)
     metadata = {}
-    headers = {'title', 'date', 'category', 'contact', 'tagline', 'mailing_list'}
+    headers = {'title', 'date', 'category', 'contact', 'tagline', 'mailing_list', 'repository'}
     for line in f:
         line = line.decode('utf-8')
         if not line.strip().split():

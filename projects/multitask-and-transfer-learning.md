@@ -10,10 +10,7 @@
 
 Currently in the early stages of writing the benchmark for measuring performance
 
-- https://github.com/deontologician/atari_multitask (Some details in the README
-  are out of date with regards to the intended approach. I’ve decided to use
-  cross-validation instead of a static test/training set of Atari games)
-
+- https://github.com/deontologician/atari_multitask
 
 ## Community Links
 - TBA
@@ -21,13 +18,18 @@ Currently in the early stages of writing the benchmark for measuring performance
 
 ## Problem Description
 
-Create a benchmark for multi task learning (beginning with performance across
-Atari games), then develop a reinforcement learning architecture that beats
-existing techniques on the benchmark. The benchmark will be able to measure both
-absolute performance on all tasks (e.g. top scores on all Atari games) and also
-how much more quickly a given architecture learns an unseen task when it is
-first trained on unrelated tasks (e.g. ratio of score trained vs. untrained on a
-new game and a fixed number of frames).
+First, create a benchmark for multi task learning and transfer learning.
+The benchmark should measure improvement in learning that is directly attributable
+to knowledge transfer between games. The benchmark should also be able to measure
+performance by a single agent on multiple games. The benchmark should use cross-validation
+to mitigate the effects of a small sample size of games.
+
+Second, design and implement deep reinforcement learning architectures that do well
+on the benchmark. For methodological reasons, we think it's important to design the ideal benchmark
+before getting too attached to a particular architecture. It's important that
+we're sure the benchmark is measuring the crux of the transfer and multi-task problem
+rather than measuring something our architecture is good at.
+
 
 **Why this problem matters**
 
@@ -42,7 +44,9 @@ At a more meta-level, this problem is both out of reach of current reinforcement
 learning architectures, but it seems reasonably within reach within a year or
 two. Much like ImageNet spurred innovation by creating a common target for
 researchers to aim for, this project could similarly provide a common idea of
-success for multitask and transfer learning.
+success for multitask and transfer learning. Many papers researching multi-task
+and transfer learning using Atari are doing it in ad-hoc ways that cherry-pick
+games that get good results.
 
 ## How to measure success
 
@@ -56,22 +60,23 @@ The fundamental benchmark then will be two measures:
 
 
 1. **Transfer Learning**: How much a given architecture improves on an unseen
-game when it untrained versus when it is first trained on other games. Measured
-as a ratio of total score pre-trained vs. untrained. Ratio is averaged using
+game when it is untrained versus when it has been trained on other games firest.
+Measured as a ratio of total score pre-trained vs. untrained. Ratio is averaged using
 cross-validation given that there is a small number of available games and the
-large differences between individual games.
+fact that high scores are not comparable across games.
 2. **Multitask Learning**: How well a given architecture does across all games
-in terms of absolute score vs. best human performance on each game. Measured as
-top scores across all Atari games for a single architecture and set of weights.
+with a single architecture and set of weights. Rather than an aggregate, this
+result will be a vector of top scores achieved for each game.
 
-In addition to the scores, the benchmark will also make some strict demands on the architecture itself due to the testing/training regime:
+In addition to the scores, the benchmark will also make some strict demands on
+the architecture itself due to the testing/training regime:
 
 - Training will happen on random games sequentially. After each loss a new
   random game from the training set will be selected to play next.
-- No out of band signal will be given to indicate which game is being played, so
+- **No out of band signal** will be given to indicate which game is being played, so
   architectures that need to allocate a set of extra weights for each game will
   have to be more clever.
-- All games in ALE will be used, even ones which standard DQNs perform poorly on
+- All games in ALE will be used, **even ones which standard DQNs perform poorly on**
   like Montezuma’s Revenge.
 
 ## Data Sets
@@ -111,3 +116,4 @@ target for testing out RL architectures
   - Original DeepMind Atari paper
     - [Related workshop paper from 2013](https://arxiv.org/abs/1312.5602v1)
   - No multi-task or transfer learning attempted, but has some reasonable baselines for human performance on the games (which are then re-used in many subsequent papers)
+- [Reinforcement Learning with Unsupervised Auxiliary Tasks](https://arxiv.org/abs/1611.05397v1)

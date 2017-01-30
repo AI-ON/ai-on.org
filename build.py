@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 '''Code for generating the AION static website.
 '''
-
+from __future__ import print_function
 from __future__ import unicode_literals
 import markdown
 import os
@@ -17,7 +17,13 @@ jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(TEMPLATES_DIR))
 def parse_project_file(fpath):
     f = open(fpath)
     metadata = {}
-    headers = {'title', 'date', 'category', 'contact', 'tagline', 'mailing_list', 'repository'}
+    headers = {'title',
+               'date',
+               'category',
+               'contact',
+               'tagline',
+               'mailing_list',
+               'repository'}
     for line in f:
         line = line.decode('utf-8')
         if not line.strip().split():
@@ -48,6 +54,7 @@ def render_project_pages():
     applied_projects = []
 
     for fname in fnames:
+        print('Processing project:', fname)
         fpath = os.path.join(PROJECTS_MD_DIR, fname)
         # parse project file into metadata and content
         md_content, metadata = parse_project_file(fpath)

@@ -1,0 +1,84 @@
+---
+layout: page
+---
+
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <br/><br/><br/>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="page-heading">AI•ON Projects</h2>
+            </div>
+        </div>
+        <br/><br/>
+    </div>
+</header>
+
+
+<section id="" class="bg-light-gray">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="section-heading line-bg">
+                    <span>Active Projects</span>
+                </h3>
+            </div>
+        </div>
+
+        <div class="row">
+            {% for post in site.posts %}
+               {% if post.Type == "new" %}
+                <div class="col-sm-9 col-centered">
+                    <div class="project-item-container">
+                        <a href="{{ post.url }}">
+                            <div class="project-item card">
+                              <h3>{{ post.Title }}</h3>
+                              <p class="project-authors-card">{{ post.Authors }}</p>
+                              <p>
+                                {{ post.Tagline }}
+                              </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="section-heading line-bg">
+                    <span>Legacy Projects</span>
+                </h3>
+            </div>
+        </div>
+
+        <div class="row">
+            {% for post in site.posts %}
+                {% if post.Type == "legacy" %}
+                <div class="col-sm-6">
+                        <div class="project-item-container">
+                            <a href="{{ post.url }}">
+                                <div class="project-item card">
+                                  <h3>{{ post.Title }}</h3>
+                                  <p>
+                                    {{ post.Tagline }}
+                                  </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <br>
+
+
+    </div>
+</section>

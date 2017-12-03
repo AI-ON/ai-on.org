@@ -9,3 +9,33 @@ AI•ON is an open community dedicated to advancing Artificial Intelligence by:
 - Providing a learning environment for students looking to gain machine learning experience.
 
 Learn more at [ai-on.org](http://ai-on.org) and get in touch through [gitter](https://gitter.im/ai-open-network/Lobby).
+
+## Development:
+
+### Jekyll Setup:
+
+* `gem install jekyll bundler`
+* turn the server:
+    - jekyll serve --watch
+
+### Site Development:
+
+```
+.
+├── README.md
+├── _config.yml # Site Config
+├── _data
+├── _posts # Add Posts Here (New Projects)
+├── _includes # Page Partials eg: header, navigation
+├── _layouts # Page Layouts eg: home_page, page
+├── _plugins # Scripts / Plugins (if needed)
+├── css
+├── js
+├── img
+├── _site # Automatically generated
+├── index.html
+├── process.html
+├── projects.html
+└── style.css
+
+```

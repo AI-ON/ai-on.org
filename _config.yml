@@ -1,0 +1,64 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+newbaseurl: /
+url: "https://ai-on.org" #change this to the websites URL
+
+# Site settings
+title: "AI•ON: Artificial Intelligence Open Network"
+description: "AI•ON is an open community dedicated to advancing Artificial Intelligence"
+
+# Social networks usernames
+social:
+  - title: github
+    url: http://github.com/AI-ON
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+# Outputting
+permalink: /:categories/:title/
+timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp

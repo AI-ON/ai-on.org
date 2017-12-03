@@ -1,0 +1,91 @@
+---
+layout: page
+---
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="col-lg-10">
+
+                  <div class="row">
+                    <div class="col-md-8">
+                        <div class="pull-left"><img src="/img/website-logo.png" class="img-responsive header-logo" alt=""></div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12 tagline">
+                        <div class="">We are an open community dedicated to advancing Artificial Intelligence by assembling teams of volunteer researchers around the world to work on problems curated by leaders of the field.</div>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="" class="bg-light-gray">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="box-item">
+                        <h4 class="text-left cta">As a leading researcher, outsource your backlog of projects and promote equality of opportunity in AI research:</h4>
+                        <p class="text-muted"></p>
+                        <ul class="text-left">
+                            <li>Submit research problems to the attention of the community.</li>
+                            <li>Provide light, high-level guidance and mentorship to the team of contributors working to solve the problem you submitted.</li>
+                            <li>Receive credit for your contributions to the research process.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="col-sm-6">
+                    <div class="box-item">
+                        <h4 class="text-left cta">As a research contributor, gain experience and have an impact:</h4>
+                        <p class="text-muted"></p>
+                        <ul class="text-left">
+                            <li>Explore our list of open problems, and pick one to work on.</li>
+                            <li>Join the team of contributors collaborating to solve it - entirely in the open.</li>
+                            <li>Gain machine learning expertise in contact with mentors and fellow contributors.</li>
+                            <li>Ship code and ideas that make a meaningful impact in the real world.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-heading line-bg">
+                        <span>Our Projects</span>
+                    </h3>
+                </div>
+            </div>
+
+
+            <div class="row">
+                {% for post in site.posts limit:4 %}
+                    {% if post.Type == "new" %}
+                    <div class="col-sm-9 col-centered">
+                        <div class="project-item-container">
+                            <a href="{{ post.url }}">
+                                <div class="project-item card">
+                                  <h3>{{ post.Title }}</h3>
+                                  <p class="project-authors-card">{{ post.Authors }}</p>
+                                  <p>
+                                    {{ post.Tagline }}
+                                  </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <br/>
+
+        </div>
+    </section>

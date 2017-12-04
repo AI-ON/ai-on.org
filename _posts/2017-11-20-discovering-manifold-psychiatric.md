@@ -3,7 +3,7 @@ Title: Psychiatric disorders manifold
 Tagline: Develop a manifold of structural/functional brain scans in an embedding space that clusters mental disease states into clinically recognized classes.
 Date: November 2017
 Category: Fundamental Research
-Contact: Rajat Mani Thomas (rajatthomas@gmail.com), Max Welling (m.welling@uva.nl)
+Contact: Rajat Mani Thomas (rajatthomas@gmail.com)
 Type: new
 Authors: Rajat Mani Thomas, Paul Zhutovsky, Guido van Wingen, Max Welling
 ---

@@ -18,11 +18,11 @@ meta-learning. We plan to collect and construct benchmarks for this problem and
 evaluate various solutions.
 
 
-## Resources
-
-[Link to GitHub repository](https://github.com/AI-ON/Few-Shot-Music-Generation)
-
-
 ## Access the full proposal
 
-[Link to PDF](/pdf/larochelle-few-shot-distribution-learning.pdf)
+- [Link to PDF](/pdf/larochelle-few-shot-distribution-learning.pdf)
+
+
+## Resources
+
+- [GitHub repository](https://github.com/AI-ON/Few-Shot-Music-Generation)

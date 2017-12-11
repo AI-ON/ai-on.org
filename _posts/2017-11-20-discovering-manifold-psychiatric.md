@@ -20,6 +20,15 @@ propose a flavour of the adversarial autoencoder to accomplish this task. The go
 is wide and ambitious enough to accommodate several other alternatives to solve
 this challenge.
 
+
 ## Access the full proposal
 
-[Link to PDF](/pdf/thomas-discovering-manifold-psychiatric.pdf)
+- [Link to PDF](/pdf/thomas-discovering-manifold-psychiatric.pdf)
+
+
+## Resources
+
+- [OSF project tracker](https://osf.io/y2unj/)
+- [GitHub repository](https://github.com/AI-ON/deep-embedding)
+- [Slack channel](https://deep-embedding.slack.com/)
+- [Google group](https://groups.google.com/d/forum/deep-embedding)

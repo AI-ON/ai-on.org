@@ -40,4 +40,11 @@ is only used to make a prediction.
 
 ## Access the full proposal
 
-[Link to PDF](/pdf/bengio-consciousness-prior.pdf)
+- [Link to PDF](/pdf/bengio-consciousness-prior.pdf)
+
+
+## Resources
+
+- [GitHub repository](https://github.com/AI-ON/TheConsciousnessPrior)
+- [Slack channel](https://theconsciousnessprior.slack.com/)
+- [Google group](https://groups.google.com/forum/#!forum/the-consciousness-prior)

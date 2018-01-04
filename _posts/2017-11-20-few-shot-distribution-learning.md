@@ -26,3 +26,5 @@ evaluate various solutions.
 ## Resources
 
 - [GitHub repository](https://github.com/AI-ON/Few-Shot-Music-Generation)
+- [Slack channel](https://few-shot-music-gen.slack.com/join/shared_invite/enQtMjgwMTA0NTA3MzQ3LTA3MTc3M2E4MjEyNDlhZDNlMTU2ZmUyMmNmMDlhYmQ2ZmFkMDRiZTAzZDJmYmYwYmE0NjRmZGMyMmYxOWEzMWU)
+- [Google group](https://groups.google.com/forum/#!forum/few-shot-music-generation)

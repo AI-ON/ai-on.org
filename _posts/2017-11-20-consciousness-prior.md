@@ -46,5 +46,5 @@ is only used to make a prediction.
 ## Resources
 
 - [GitHub repository](https://github.com/AI-ON/TheConsciousnessPrior)
-- [Slack channel](https://theconsciousnessprior.slack.com/)
+- [Slack channel](https://theconsciousnessprior.slack.com/join/shared_invite/enQtMjg5MDg0NDY1NjAyLWRjZTcyY2VjMzFjMWI5YTQ0MmRjY2RmZjc4NTZkMzdmMzc4YWNkYTM3YjgwNTRmNWVkOWNmMmFiYzBhZDUxNzI)
 - [Google group](https://groups.google.com/forum/#!forum/the-consciousness-prior)
